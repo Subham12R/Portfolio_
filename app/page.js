@@ -1,19 +1,17 @@
 "use client"
-import { useState } from "react";
 import Banner from "./src/Banner";
-
-import Skills from "./src/Skills";
 import Biography from "./src/Biography";
+import Skills from "./src/Skills";
 
 
 
 const Home = () => {
-  const [showBanner, setShowBanner] = useState(false);
+
   return (
      <>
         <Banner/>
         <Biography />
-        {/* <Skills /> */}
+        <Skills />
      </>
   );
 }

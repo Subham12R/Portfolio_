@@ -1,24 +1,15 @@
 import React, { useState } from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 import { Button } from "@/components/ui/button";
 
 const Banner = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [theme, setTheme] = useState("light");
 
   const toggleSidebar = () => {
     setIsSidebarOpen((prev) => !prev);
   };
 
-  const scrollToBio = () => {
-    document.getElementById("bio").scrollIntoView({ behavior: "smooth" });
-  };
 
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.setAttribute("data-theme", newTheme);
-  };
 
   return (
     <>
@@ -210,16 +201,7 @@ const Banner = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mb-11">
-          <Button
-            variant="outline"
-            onClick={scrollToBio}
-            className="shadow-md"
-            id="#bio"
-          >
-            Biography
-          </Button>
-        </div>
+
       </main>
     </>
   );
