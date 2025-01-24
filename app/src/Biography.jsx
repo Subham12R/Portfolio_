@@ -6,7 +6,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 const Biography = () => {
   return (
-    <main id="bio" className="cursor-default ">
+    <main id="bio" className="cursor-default h-auto lg:h-max ">
       <div className="flex items-center h-auto justify-center">
         <div className="flex flex-col lg:flex-row  max-w-6xl w-full px-6 py-8">
 

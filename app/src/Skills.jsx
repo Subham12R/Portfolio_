@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 const Skills = () => {
   return (
     <>
-      <div className="bg-white-900">
+      <div className="bg-white h-auto lg:h-max" id='services'>
         
         {/* Header */}
         <div className="w-full  h-auto p-4 bg-white">

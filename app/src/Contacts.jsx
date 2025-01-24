@@ -7,7 +7,7 @@ import { Separator } from "@/components/ui/separator";
 const Contacts = () => {
   return (
     <>
-      <div className="h-max">
+      <div className="h-auto lg:h-max" id='contacts'>
         <div className="bg-zinc-900 text-white p-5">
           {/* Page Title */}
           <div className="flex justify-center items-center text-center">

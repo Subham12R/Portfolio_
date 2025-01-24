@@ -17,7 +17,7 @@ const Banner = () => {
       <header>
         <nav className="navbar bg-zinc-200/50 shadow-md">
           {/* Navbar Start */}
-          <div className="navbar-start">
+          <div className="navbar-start" >
             {/* Hamburger Menu */}
             <button
               className="lg:hidden p-2 focus:outline-none"
@@ -47,27 +47,27 @@ const Banner = () => {
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
               <li>
-                <a className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <a href="#home" className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Home
                 </a>
               </li>
               <li>
-                <a className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
+                <a href="#bio" className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
                   About
                 </a>
               </li>
               <li>
-                <a className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
+                <a href="#services" className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
                   Services
                 </a>
               </li>
               <li>
-                <a className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
+                <a href="#projects" className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
                   Projects
                 </a>
               </li>
               <li>
-                <a className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
+                <a href="#contacts" className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out outline-none">
                   Contact
                 </a>
               </li>
@@ -115,29 +115,29 @@ const Banner = () => {
           <ul className="flex flex-col space-y-4 p-4">
             <li>
               <a
-                href="#"
+                href="#home"
                 className="text-xl font-bold hover:scale-105 duration-500 transition-all ease-out bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
               >
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="text-lg font-bold hover:text-blue-500">
+              <a href="#bio" className="text-lg font-bold hover:text-blue-500">
                 About
               </a>
             </li>
             <li>
-              <a href="#" className="text-lg font-bold hover:text-blue-500">
+              <a href="#services" className="text-lg font-bold hover:text-blue-500">
                 Services
               </a>
             </li>
             <li>
-              <a href="#" className="text-lg font-bold hover:text-blue-500">
+              <a href="#projects" className="text-lg font-bold hover:text-blue-500">
                 Projects
               </a>
             </li>
             <li>
-              <a href="#" className="text-lg font-bold hover:text-blue-500">
+              <a href="#contacts" className="text-lg font-bold hover:text-blue-500">
                 Contact
               </a>
             </li>
@@ -146,8 +146,8 @@ const Banner = () => {
       </div>
 
       {/* Main Section */}
-      <main className="bg-white cursor-default">
-        <div className="flex justify-center items-center h-screen">
+      <main className="bg-white cursor-default" id="home">
+        <div className="flex justify-center items-center h-auto lg:h-screen">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 py-8 max-w-7xl w-full">
             {/* Left Grid - Text */}
             <div className="flex flex-col justify-center items-center space-y-6">
@@ -162,8 +162,8 @@ const Banner = () => {
                 </h3>
               </div>
               <Button
-                className="bg-blue-500 text-white shadow-md hover:scale-105 hover:bg-blue-700 transition-all transform ease-in-out duration-500"
-                variant="secondary"
+                className="bg-blue-500 text-white shadow-md focus:scale-105 hover:bg-blue-700 transition-all transform ease-in-out duration-500"
+                variant=""
               >
                 Download CV
               </Button>
