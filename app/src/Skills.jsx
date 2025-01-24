@@ -2,8 +2,74 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { Separator } from "@/components/ui/separator";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Skills = () => {
+
+  const testimonials = [
+    {
+      quote: "This service is amazing! I highly recommend it to everyone.",
+      name: "John Doe",
+      position: "CEO, Example Co.",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Fantastic experience, exceeded all my expectations!",
+      name: "Jane Smith",
+      position: "Marketing Head, XYZ Inc.",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Absolutely the best! The team is incredible.",
+      name: "Michael Brown",
+      position: "Freelancer",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Professional and reliable service. Would definitely use it again.",
+      name: "Emily Johnson",
+      position: "Entrepreneur",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Professional and reliable service. Would definitely use it again.",
+      name: "Emily Johnson",
+      position: "Entrepreneur",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Professional and reliable service. Would definitely use it again.",
+      name: "Emily Johnson",
+      position: "Entrepreneur",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Professional and reliable service. Would definitely use it again.",
+      name: "Emily Johnson",
+      position: "Entrepreneur",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Professional and reliable service. Would definitely use it again.",
+      name: "Emily Johnson",
+      position: "Entrepreneur",
+      image: "./test1.jpg",
+    },
+    {
+      quote: "Professional and reliable service. Would definitely use it again.",
+      name: "Emily Johnson",
+      position: "Entrepreneur",
+      image: "./test1.jpg",
+    },
+  ];
+
+
   return (
     <>
       <div className="bg-white h-auto lg:h-max" id='services'>
@@ -68,47 +134,41 @@ const Skills = () => {
 
         </div>
 
-        <div className='h-auto p-5 bg-white'>
-          <h1 className='text-2xl font-bold font-sans text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>Client Testimonials</h1>
-          <div className="w-auto lg:max-w-8xl mt-5 p-5 shadow-md bg-white flex flex-1 justify-center items-center rounded-md">
-          <div className="carousel rounded-box">
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700 ">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
-              alt="Burger" />
-          </div>
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
-              alt="Burger" />
-          </div>
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
-              alt="Burger" />
-          </div>
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
-              alt="Burger" />
-          </div>
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
-              alt="Burger" />
-          </div>
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
-              alt="Burger" />
-          </div>
-          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
-              alt="Burger" />
-          </div>
+        <div className='h-auto p-5 bg-zinc-900 m-9 rounded-md'>
+        <h1 className="text-5xl font-extrabold text-center text-gray-200 mb-12">
+        What Our Clients Say
+      </h1>
+      <div className='p-5 bg-zinc-900 rounded-lg'>
+      <Carousel className="max-w-5xl mx-auto">
+        <CarouselContent className="flex gap-6">
+          {testimonials.map((testimonial, index) => (
+            <CarouselItem
+              key={index}
+              className="flex-shrink-0 md:basis-1/2 lg:basis-1/3"
+            >
+              <div className="w-80 h-80 bg-blue-500 flex flex-col items-center text-center  shadow-lg p-8 rounded-md hover:scale-105 transform transition-transform duration-300 ease-in-out">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-20 h-20 rounded-full mb-6 shadow-md"
+                />
+                <p className="text-lg text-gray-200 italic mb-4">
+                  "{testimonial.quote}"
+                </p>
+                <h3 className="text-xl font-bold text-white mb-1">
+                  {testimonial.name}
+                </h3>
+                <p className="text-sm text-gray-100">{testimonial.position}</p>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <div className="flex justify-between mt-6">
+          <CarouselPrevious className="text-white bg-gray-800 rounded-full p-3 hover:bg-gray-700 shadow-md" />
+          <CarouselNext className="text-white bg-gray-800 rounded-full p-3 hover:bg-gray-700 shadow-md" />
         </div>
-          </div>
+      </Carousel>
+      </div>
           </div>
       
     </>
