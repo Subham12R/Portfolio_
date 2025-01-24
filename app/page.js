@@ -1,6 +1,7 @@
 "use client"
 import Banner from "./src/Banner";
 import Biography from "./src/Biography";
+import Projects from "./src/Projects";
 import Skills from "./src/Skills";
 
 
@@ -12,6 +13,7 @@ const Home = () => {
         <Banner/>
         <Biography />
         <Skills />
+        <Projects />
      </>
   );
 }

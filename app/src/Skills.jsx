@@ -63,6 +63,49 @@ const Skills = () => {
 
 
         </div>
+
+        <div className='h-auto p-5 bg-zinc-900'>
+          <h1 className='text-2xl font-bold font-sans text-center bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent'>Client Testimonials</h1>
+          <div className="w-auto lg:max-w-8xl mt-5 p-5 shadow-md bg-zinc-800 flex flex-1 justify-center items-center rounded-md">
+          <div className="carousel rounded-box">
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700 ">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp"
+              alt="Burger" />
+          </div>
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp"
+              alt="Burger" />
+          </div>
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.webp"
+              alt="Burger" />
+          </div>
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1494253109108-2e30c049369b.webp"
+              alt="Burger" />
+          </div>
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.webp"
+              alt="Burger" />
+          </div>
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1559181567-c3190ca9959b.webp"
+              alt="Burger" />
+          </div>
+          <div className="carousel-item opacity-80 hover:opacity-100 hover:scale-105 ease-in-out transition-all duration-700">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.webp"
+              alt="Burger" />
+          </div>
+        </div>
+          </div>
+          </div>
       
     </>
   );
