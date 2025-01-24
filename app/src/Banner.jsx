@@ -76,7 +76,7 @@ const Banner = () => {
 
           {/* Navbar End */}
           <div className="navbar-end">
-          <Button id="" variant="" className="ml-3 shadow-lg text-blue-950 bg-blue-400 hover:bg-blue-600 opacity-80 hover:scale-105 hover:opacity-100 group transform transition-all ease-in-out duration-500 ">Hire Me</Button>
+          <Button href="#contacts" variant="" className="ml-3 shadow-lg text-blue-950 bg-blue-400 hover:bg-blue-600 opacity-80 hover:scale-105 hover:opacity-100 group transform transition-all ease-in-out duration-500 ">Hire Me</Button>
           </div>
         </nav>
       </header>
