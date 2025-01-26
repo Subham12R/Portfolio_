@@ -37,7 +37,7 @@ const Biography = () => {
                     </svg>
                   </div>
                   <div className="timeline-end md:mb-10">
-                    <time className="font-mono italic">2010</time>
+                    <time className="font-mono italic">2008</time>
                     <div className="text-lg font-black">Admission</div>
                     Took Admission at Holy Angels' School, Katwa
                   </div>
