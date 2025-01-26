@@ -34,6 +34,14 @@ const Projects = () => {
       description: "An AI Integrated web app chat bot",
       github: "https://github.com/Subham12R/Chat-Bot",
       test: "https://chat-41mbed6yr-subham12rs-projects.vercel.app/" // Add your test/demo link here
+    },
+    {
+      id: 4,
+      image: "./dashboard.jpg",
+      title: "DashBoard",
+      description: "A Dash Board to manage all your daily needs",
+      github: "-upcoming",
+      test: "-under process" // Add your test/demo link here
     }
   ];
 
