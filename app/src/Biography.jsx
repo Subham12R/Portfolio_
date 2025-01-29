@@ -6,13 +6,13 @@ import { RiNextjsFill } from "react-icons/ri";
 
 const Biography = () => {
   return (
-    <main id="bio" className="cursor-default h-auto lg:h-max ">
+    <main id="bio" className="cursor-default bg-zinc-900 h-auto lg:h-max ">
       <div className="flex items-center h-auto justify-center">
         <div className="flex flex-col lg:flex-row  max-w-6xl w-full px-6 py-8">
 
           {/* Timeline Section */}
           <div className="flex-1 mb-6 lg:mb-0">
-            <div className="w-auto max-w-4xl shadow-md rounded-md p-5 bg-white h-full overflow-auto">
+            <div className="w-auto max-w-4xl shadow-md rounded-md p-5 bg-zinc-950/50 text-gray-200 h-full overflow-auto">
               <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
                 {/* Timeline Items */}
                 <li>
@@ -119,7 +119,7 @@ const Biography = () => {
           <div className="divider lg:divider-horizontal"></div>
 
           {/* Biography Section */}
-          <div className="flex-1 h-screen p-10 w-auto max-w-5xl rounded-md shadow-md mx-5 bg-white">
+          <div className="flex-1 h-screen p-10 w-auto max-w-5xl rounded-md shadow-md mx-5 bg-zinc-950/50 text-gray-200">
             <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">
               Biography
             </h1>
@@ -133,19 +133,19 @@ const Biography = () => {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Age</h3>
-                <p className="text-lg text-gray-600">19 Years</p>
+                <h3 className="text-lg font-semibold text-gray-200">Age</h3>
+                <p className="text-lg text-gray-400">19 Years</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Address</h3>
-                <p className="text-lg text-gray-600">Kolkata, West Bengal, India</p>
+                <h3 className="text-lg font-semibold text-gray-200">Address</h3>
+                <p className="text-lg text-gray-400">Kolkata, West Bengal, India</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Contact</h3>
-                <p className="text-lg text-gray-600">rikk4335@gmail.com</p>
+                <h3 className="text-lg font-semibold text-gray-200">Contact</h3>
+                <p className="text-lg text-gray-400">rikk4335@gmail.com</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Skills</h3>
+                <h3 className="text-lg font-semibold text-gray-200">Skills</h3>
                 <div className="flex gap-4 flex-wrap">
                   <div className="bg-yellow-200 p-2 shadow-md rounded-md inline-block">
                     <FaJsSquare className="inline-block mx-1 text-2xl text-yellow-500" />
@@ -162,12 +162,12 @@ const Biography = () => {
                 </div>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Hobbies</h3>
-                <p className="text-lg text-gray-600">Photography, Drawing, Designing</p>
+                <h3 className="text-lg font-semibold text-gray-200">Hobbies</h3>
+                <p className="text-lg text-gray-400">Photography, Drawing, Designing</p>
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">Experience</h3>
-                <p className="text-lg text-gray-600">Learning on the go with a year into this field!</p>
+                <h3 className="text-lg font-semibold text-gray-200">Experience</h3>
+                <p className="text-lg text-gray-400">Learning on the go with a year into this field!</p>
               </div>
             </div>
             <div className="divider"></div>
