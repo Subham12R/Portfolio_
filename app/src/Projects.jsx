@@ -39,6 +39,14 @@ const Projects = () => {
       github: "https://github.com/Subham12R/Chat-Bot",
       test: "https://chat-41mbed6yr-subham12rs-projects.vercel.app/"
     },
+    {
+      id: 4,
+      image: "game1.jpg", // Place image in public/images folder
+      title: "X/O",
+      description: "A Simple Tic-Tac-Toe Game",
+      github: "https://github.com/Subham12R/X-O",
+      test: "https://x-o-livid.vercel.app/"
+    },
     
   ];
 
